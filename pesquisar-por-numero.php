@@ -9,18 +9,17 @@ if (isset($_GET['numero'])) {
     $campos = explode(';', $linha);
 
     if (trim($campos[2]) == $numero_pesquisa) {
-      echo "Nome: $campos[0]<br>";
-      echo "Email: $campos[1]<br>";
-      echo "Número do aluno: $campos[2]<br>";
+      echo "<p>Nome: $campos[0]<p>";
+      echo "<p>Email: $campos[1]<p>";
+      echo "<p>Número do aluno: $campos[2]<p>";
       break;
     }
     else {break;}
   }
-  echo "O número de aluno informado não foi encontrado. Tente novamente.";
 
   fclose($arquivo);
 } else {
-  echo "Por favor, informe o número do aluno a ser pesquisado.";
+  echo "<p> O número de aluno informado não foi encontrado. Tente novamente.<p>";
 }
 
 ?>

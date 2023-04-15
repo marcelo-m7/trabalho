@@ -5,13 +5,12 @@ function submeterFormulario(id_formulario) {
         
         e.preventDefault();
 
-        // submissao do formulário em Ajax
         $.ajax({
             type: formulario.attr('method'),
             url: formulario.attr('action'),
             data:formulario.serialize(),
             success: function(i) {
-                document.getElementById('resultado').innerText = 'Submetido com sucesso.';
+                document.getElementById('resultado').innerHTML = '<p> Submetido com sucesso.<p>';
             },
             error: function() {
                 $('#resultado').html('Erro com a submissão');
@@ -21,20 +20,3 @@ function submeterFormulario(id_formulario) {
     })
 }
 
-function chamaMenu(){
-    let conteud = document.querySelector("#menu");
-    carregar_arquivo("menu.html", conteud);
-}
-
-function carregar_arquivo(url, conteud) {
-    if (window.XMLHttpRequest) {
-        xmlhttp = new XMLHttpRequest();
-    }
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            conteud.innerHTML = xmlhttp.responseText;
-        }
-    }
-    xmlhttp.open("GET", url);
-    xmlhttp.send();
-}
