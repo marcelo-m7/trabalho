@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <link href="estilos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar novo contacto</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Pesquisar Aluno</a>
+          <div class="dropdown-content">
+            <a href="pesquisa-por-numero.html">Por número do aluno</a>
+            <a href="pesquisa-por-nome.html">Por nome do aluno</a>
+          </div>
+        </li>
+        <li><a href="novo-contacto.html">Adicionar Aluno</a></li>
+      </ul>
+    
+    <h1>Adicionar novo contacto</h1>
+    <p>Insira os dados correspondentes so contacto que deseja adicionar à agenda.</p>
+
+    <form action="novo-contacto.php" method="post" id="dadosForm">
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite o nome">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" placeholder="Digite o e-mail">
+        </div>
+        <br>
+        <div>
+            <label for="numero">Número do aluno: </label>
+            <input type="number" name="numero" placeholder="Digite somente o número">
+        </div>
+        <br>
+        <button onclick="submeterFormulario('dadosForm')">Enviar</button>
+    </form>
+        <div id="resultado"></div>
+
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+</body>
+</html>
