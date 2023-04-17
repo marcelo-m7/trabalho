@@ -1,0 +1,65 @@
+<!-- Menu do tipo botões que ao passar em cima da opção abre-se um sub-menu select com as opções.
+Menu principal (opções): Pesquisar contacto(1), Adicionar Contacto (2), Ver todos os contactos (3),
+Manual de Instruções (4), Página inicial (5).
+
+    (1): Por nome, Por número do Aluno
+    (2): leva para formulario com inputs (nome, numero do aluno, e-mail)
+    (3): levar para pagina que exibe os contactos
+    (4): leva ao "Manual de Instruções", com "clique para baixar o PDF do manual"
+    (5): homepage com o menu -->
+
+<!-- falta incrementar:
+cookie para ao entrar no site, aciona alert(prompt("aceitar termo de acesso")). 
+adicionar o menu automaticamente do arquivo menu.html em todas as paginas
+fazer documento pdf com manual de instrução
+dar um jeito de pesquisar por qualquer parte do nome do aluno
+(ok) decorar o css -->
+
+
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Menu - TP2 Tecnologias Web</title><link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+ 
+
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Pesquisar Aluno</a>
+      <div class="dropdown-content">
+        <a href="pesquisa-por-numero.html">Por número do aluno</a>
+        <a href="pesquisa-por-nome.html">Por nome do aluno</a>
+      </div>
+    </li>
+    <li><a href="novo-contacto.html">Adicionar Aluno</a></li>
+  </ul>
+  
+     
+       
+
+
+  <h1>Bem-vindo(a) a agenda de contactos do CTESP de Sistemas Informáticos</h3>
+  <p>Nesse site, poderá pesquisar o e-mail dos alunos, além de adicionar novos contactos à agenda.</p>
+  <p>Poderá baixar o Manual de Instruções clicando <a href="indexmanual.html" target="_blank">aqui</a>.</p>
+  <p>Desenvolvido por: Marcelo Santos (a79433) e Sofia Reis (a81695)</p>
+  <div id=" Cookies" class="=hide">
+    
+    
+    <div class="container">
+        <div class="cookies">
+            <h1 claase = "title">Cookies</h1> 
+<p class="info">Pretende aceitar as políticas Cookies do nosso site? Se clicar em "Aceitar" concorda automaticamente 
+    com os termos e condições desses! <a href="Cookiesinfo.html"> Leia mais</a> </p>   
+    <button> Aceitar </button>
+    <script src="javacoo.js" ></script>
+        </div>        
+    </div>
+</div> 
+  </body>
+  </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1> Explicação de utilização de site</h1>
+        <h2> Introdução</h2>
+            <p >Este manual de instruções visa a descreve o processo de desenvolvimento de um site "Agenda" de maneira clara, o site 
+                tem como home Page a página principal que contem uma hiperligação para aceder ao Manual de instruções, 
+                que está a ler. A página principal contém um friso modelado em CSS, pode então aceder a pesquisa de contactos 
+                de alunos tanto por, tanto por nome, o até fazer o input de outro contacto na opção “Adicionar Aluno” presente
+                no friso.O site foi desenvolvido com o objetivo de aplicar as funcionalidades aprendidas em aula, utilizando
+                as ferramentas Ajax, PHP, JavaScript e CSS.    </p>
+         <h2> Funcionamento do Site </h2>
+            <p>O site foi desenvolvido com um menu na parte superior, que contém as opções Adicionar Contato e Pesquisar Contato. Ao 
+                selecionar a opção Adicionar Aluno, o usuário é direcionado para uma página com um formulário que solicita os inputs
+                necessários para a criação de um novo contacto, os inputs formulados pelo usuário serão salvaguardados no ficheiro 
+                “contactos.txt”. É possível adicionar novos contactos na lista através do método GET que aciona o código PHP que faz a
+                leitura dos seguintes dados; Nome, Email e Número do Aluno.   </p>
+            <p>A opção “Pesquisar Aluno” do site Agenda permite que o usuário pesquise um contato específico a partir do nome do aluno,
+                o número de aluno. o formulário de pesquisa de aluno utiliza o método GET para enviar os dados do input "nome" para o arquivo
+                PHP responsável por buscar o aluno no arquivo "contactos.txt". Em seguida, o código PHP faz a leitura do arquivo "contactos.txt"
+                em busca do nome do aluno pesquisado. Se o nome for encontrado, são exibidos na tela o nome, email e número do aluno correspondente. 
+                É importante ressaltar que o usuário pode pesquisar por parte do nome, sendo possível usar o primeiro, último ou ambos os nomes. 
+                Ao selecionar uma das opções de pesquisa e inserir o termo desejado, o site utiliza Ajax para realizar a busca e exibir os resultados 
+                em tempo real, sem a necessidade de recarregar a página. O resultado da pesquisa é apresentado em uma tabela, que exibe os dados do contato, 
+                permitindo a edição ou exclusão do registo. </p>
+        <h2> Desenvolvimento do Site </h2>  
+            <p>O site foi desenvolvido utilizando as linguagens aprendidas em aulas tal como HTML que são a base das informações do site, em HTML decide-se
+                o, contudo que junto com as formatações de CSS formam o display visual do site a fim de oferecer uma melhor experiência de navegação e interação 
+                com o site. PHP, que foi fundamental para o desenvolvimento do site "Agenda". Foi utilizado para realizar a manipulação e armazenamento dos dados
+                dos contactos no arquivo "contactos.txt". Além disso, o código PHP é responsável pela leitura dos dados inseridos pelo usuário no formulário de adição de 
+                contactos e pela exibição dos resultados da pesquisa de contactos realizada pelo usuário. Para a realização dessas operações, o código PHP foi integrado com
+                outras ferramentas, como JavaScript que é utilizada para que a interface visual do código seja interativa e carregamento dinâmico de conteúdo em uma 
+                página da web. </p>  
+                    
+            <p>Foram desenvolvidas páginas web utilizando HTML, JavaScript, PHP e CSS: Adicionar Aluno e Pesquisar Aluno, por exemplo, A primeira possui um formulário que é
+                validado em JavaScript e os dados são enviados para um arquivo PHP utilizando o método POST. Na segunda página, um formulário permite que o usuário pesquise
+                informações em tempo real utilizando AJAX para buscar dados em um arquivo "contatos.txt". As tecnologias utilizadas permitem uma experiência interativa e responsiva
+                para o usuário, sem a necessidade de recarregar a página inteira.</p>
+        <h2> Conclusão</h2>
+            <p>Em conclusão, o desenvolvimento deste site "Agenda" demonstrou a aplicação prática das linguagens e ferramentas aprendidas em aula, incluindo HTML, CSS, JavaScript,
+                PHP e Ajax. A integração dessas tecnologias permitiu a criação de uma plataforma de fácil utilização e responsiva, que possibilita ao usuário adicionar e pesquisar
+                contatos de forma rápida e eficiente. Além disso, a utilização do arquivo "contatos.txt" como base de dados para o site foi uma solução simples e funcional. No geral,
+                o processo de desenvolvimento deste site foi uma oportunidade para aprimorar habilidades técnicas e adquirir experiência prática na construção de uma aplicação web funcional
+                e interativa. </p>
+            <p>Marcelo Santos (a79433) e Sofia Reis (a81695) </p>
+        <a href="index.html" class="herf">pagina principal</a>
+
+</body>
+</html>
